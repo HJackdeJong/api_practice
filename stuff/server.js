@@ -3,11 +3,15 @@ const url = require('url');
 const { MESSAGE_PREFIX } = require('../text/constants');
 
 //TESTING THE ROLLBACK FEAUTURES
+console.log("THIS IS NEW CODE");
+
 
 // Define the request handler
 const requestHandler = (req, res) => {
     // Parse the request URL
     const queryObject = url.parse(req.url, true).query;
+
+    console.log("THIS IS NEW CODE IN THE REQUEST");
 
     // Set the response headers
     res.writeHead(200, { 'Content-Type': 'text/plain' });
