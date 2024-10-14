@@ -23,7 +23,7 @@ const requestHandler = (req, res) => {
     if (message) {
         res.end(`${MESSAGE_PREFIX}${message}`);
     } else {
-        res.end('Please provide a message in the query, e.g., /?message=hi');
+        res.end('Please provide a NEW message in the query, e.g., /?message=hi');
     }
 };
 
