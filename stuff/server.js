@@ -11,8 +11,6 @@ const requestHandler = (req, res) => {
     // Parse the request URL
     const queryObject = url.parse(req.url, true).query;
 
-    console.log("THIS IS NEW CODE IN THE REQUEST");
-
     // Set the response headers
     res.writeHead(200, { 'Content-Type': 'text/plain' });
 
@@ -23,7 +21,7 @@ const requestHandler = (req, res) => {
     if (message) {
         res.end(`${MESSAGE_PREFIX}${message}`);
     } else {
-        res.end('Please provide a NEW message in the query, e.g., /?message=hi');
+        res.end('Please provide a NEWNEW message in the query, e.g., /?message=hi');
     }
 };
 
